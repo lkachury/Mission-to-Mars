@@ -1,18 +1,40 @@
 # --------------------------
-# Scrape Mars Data: The News
+# Connect to Mongo and establish communication between the code and the database
 # --------------------------
 
-# Import Splinter and BeautifulSoup
+# Import dependencies
 from splinter import Browser
 from bs4 import BeautifulSoup as soup
 from webdriver_manager.chrome import ChromeDriverManager
-
-# Import pandas for .read_html() function.
 import pandas as pd
+import datetime as dt
 
-# Set the executable path and initialize a browser
-executable_path = {'executable_path': ChromeDriverManager().install()}
-browser = Browser('chrome', **executable_path, headless=False)
+# Define the function 
+def scrape_all():
+
+    # Set the executable path and initialize a browser
+    executable_path = {'executable_path': ChromeDriverManager().install()}
+    browser = Browser('chrome', **executable_path, headless=True)
+
+    # Set the news title and paragraph variables (this function will return two values)
+    news_title, news_paragraph = mars_news(browser)
+
+    # Run all scraping functions and store results in dictionary
+    data = {
+        "news_title": news_title,
+        "news_paragraph": news_paragraph,
+        "featured_image": featured_image(browser),
+        "facts": mars_facts(),
+        "last_modified": dt.datetime.now()
+    }
+
+    # Stop webdriver and return data
+    browser.quit()
+    return data
+
+# --------------------------
+# Scrape Mars Data: The News
+# --------------------------
 
 # Refactor the code as a function and add an argument
 def mars_news(browser):
@@ -100,4 +122,10 @@ def mars_facts():
     df.set_index('description', inplace=True)
     
     # Convert the DataFrame back into HTML-ready code 
-    df.to_html()
+    return df.to_html()
+
+
+# Tell Flask the script is complete and ready for action
+if __name__ == "__main__":
+    # If running as script, print scraped data
+    print(scrape_all())
