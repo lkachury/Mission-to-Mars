@@ -16,6 +16,7 @@ The purpose of this analysis is to utilize BeautifulSoup and Splinter to scrape 
 - Visual Studio Code 1.69
 - MongoDB 6.0
 - Flask
+- Bootstrap 3
 - Jupyter Notebook
 - Dependencies:
   - BeautifulSoup
