@@ -25,7 +25,8 @@ def scrape_all():
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
-        "last_modified": dt.datetime.now()
+        "hemispheres": hemispheres_image(browser),
+        "last_modified": dt.datetime.now()        
     }
 
     # Stop webdriver and return data
@@ -124,6 +125,33 @@ def mars_facts():
     # Convert the DataFrame back into HTML-ready code 
     return df.to_html()
 
+# --------------------------------------------------------------------------
+# Deliverable 2: Update the Web App with Mars’s Hemisphere Images and Titles
+# --------------------------------------------------------------------------
+
+# Declare and define the function 
+def hemispheres_image(browser):
+
+    # Use browser to visit the URL 
+    url = 'https://marshemispheres.com/'
+    browser.visit(url)
+
+    # Create a list to hold the images and titles.
+    hemisphere_image_urls = []
+
+    # Write code to retrieve the image urls and titles for each hemisphere.
+    for i in range(4):
+        hemisphere = {}
+        links = browser.find_by_css('a.product-item h3')[i]
+        links.click()
+        sample = browser.links.find_by_text('Sample').first
+        hemisphere['img_url'] = sample['href']
+        hemisphere['title'] = browser.find_by_css('h2.title').text
+        hemisphere_image_urls.append(hemisphere)
+        browser.back()
+
+    # Print the list that holds the dictionary of each image url and title.
+    return hemisphere_image_urls  
 
 # Tell Flask the script is complete and ready for action
 if __name__ == "__main__":
