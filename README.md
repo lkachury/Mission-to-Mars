@@ -47,8 +47,7 @@ The [index.html](https://github.com/lkachury/Mission-to-Mars/blob/main/templates
 <br /> ![image](https://user-images.githubusercontent.com/108038989/188778274-96cfcda2-560c-42c2-beac-70296648474a.png)
 
 After the scraping has been completed, the web app contains all the information from this module and the full-resolution images and titles for the four hemisphere images:
-<br /> ![image](https://user-images.githubusercontent.com/108038989/188779821-cfe13597-afe3-4f29-b1d7-ca948bb5c600.png)
-![image](https://user-images.githubusercontent.com/108038989/188779892-c867552f-cca3-4eb8-935c-76af47cd3615.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/188779821-cfe13597-afe3-4f29-b1d7-ca948bb5c600.png)![image](https://user-images.githubusercontent.com/108038989/188779892-c867552f-cca3-4eb8-935c-76af47cd3615.png)
 
 ### Deliverable 3: Add Bootstrap 3 Components
 Update the web app to make it mobile-responsive, and add two additional Bootstrap 3 components to make it stand out.
