@@ -3,8 +3,27 @@
 ## Overview
 The purpose of this analysis is to utilize BeautifulSoup and Splinter to scrape full-resolution images of Mars’ hemispheres and their titles, store the scraped data on a Mongo database, use a web application to display the data, and alter the design of the web app to accommodate these images.
 
-## Results 
+## Resources
+### Data Source 
+- [Mars News](https://redplanetscience.com/)
+- [Mars Featured Space Image](https://spaceimages-mars.com/)
+- [Mars Facts](https://galaxyfacts-mars.com/)
+- [Mars Hemisphere Images](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 
+### Software
+- Python 3.7.6
+- Conda 4.13.0
+- Visual Studio Code 1.69
+- MongoDB 6.0
+- Flask
+- Jupyter Notebook
+- Dependencies:
+  - BeautifulSoup
+  - Splinter
+  - ChromeDriverManager
+  - Python Pandas Library
+
+## Results 
 ### Deliverable 1: Scrape Full-Resolution Mars Hemisphere Images and Titles
 Using BeautifulSoup and Splinter, full-resolution images and titles of Mars’s hemispheres were scraped. The full Jupyter Notebook for this deliverable can be referenced here: [Mission_to_Mars_Challenge.ipynb](https://github.com/lkachury/Mission-to-Mars/blob/main/Mission_to_Mars_Challenge.ipynb)
 
