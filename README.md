@@ -51,9 +51,9 @@ After the scraping has been completed, the web app contains all the information 
 <br /> ![image](https://user-images.githubusercontent.com/108038989/188779821-cfe13597-afe3-4f29-b1d7-ca948bb5c600.png)![image](https://user-images.githubusercontent.com/108038989/188779892-c867552f-cca3-4eb8-935c-76af47cd3615.png)
 
 ### Deliverable 3: Add Bootstrap 3 Components
-Update the web app to make it mobile-responsive, and add two additional Bootstrap 3 components to make it stand out.
-
+The web app was updated to make it mobile-responsive, and two additional Bootstrap 3 components were added to make it stand out.
 
 The webpage is mobile-responsive: 
+<br /> ![image](https://user-images.githubusercontent.com/108038989/188781766-498499a4-68f4-4960-b623-18393047206a.png)![image](https://user-images.githubusercontent.com/108038989/188781992-0ea81e24-2c96-454b-a81e-69ea04d2ac28.png)![image](https://user-images.githubusercontent.com/108038989/188782057-18512527-7e67-4fe3-a416-af257296a9d5.png)
 
 Two additional Bootstrap 3 components are used to style the webpage: 
