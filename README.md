@@ -1,7 +1,7 @@
 # Mission-to-Mars
 
 ## Overview
-The purpose of this analysis is to utilize BeautifulSoup and Splinter to scrape full-resolution images of Mars’ hemispheres and their titles, store the scraped data on a Mongo database, use a web application to display the data, and alter the design of the web app to accommodate these images.
+The purpose of this analysis is to utilize BeautifulSoup and Splinter to scrape full-resolution images of Mars’ hemispheres and their titles, store the scraped data on a Mongo database, use a web application to display the data, and alter the design of the web app to accommodate the new images.
 
 ## Resources
 ### Data Source 
