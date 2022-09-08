@@ -51,9 +51,21 @@ After the scraping has been completed, the web app contains all the information 
 <br /> ![image](https://user-images.githubusercontent.com/108038989/188779821-cfe13597-afe3-4f29-b1d7-ca948bb5c600.png)![image](https://user-images.githubusercontent.com/108038989/188779892-c867552f-cca3-4eb8-935c-76af47cd3615.png)
 
 ### Deliverable 3: Add Bootstrap 3 Components
-The web app was updated to make it mobile-responsive, and two additional Bootstrap 3 components were added to make it stand out.
+The web app was updated to make it mobile-responsive, and at least two additional Bootstrap 3 components were added to make it stand out.
 
 The webpage is mobile-responsive: 
 <br /> ![image](https://user-images.githubusercontent.com/108038989/188781766-498499a4-68f4-4960-b623-18393047206a.png)![image](https://user-images.githubusercontent.com/108038989/188781992-0ea81e24-2c96-454b-a81e-69ea04d2ac28.png)![image](https://user-images.githubusercontent.com/108038989/188782057-18512527-7e67-4fe3-a416-af257296a9d5.png)
 
-Two additional Bootstrap 3 components are used to style the webpage: 
+Additional Bootstrap 3 components were used to style the webpage: 
+1. The "Scrape New Data" button and "Mission to Mars" banner were stylized with the following code:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/189007508-dd99e0b5-5333-4352-8901-6fe88462e9d9.png)
+
+2. The "Mars Facts" table was customized with the following code: 
+<br /> ![image](https://user-images.githubusercontent.com/108038989/189007557-4fb7e1a3-cb43-4edd-90a2-b8d8c97d2a7b.png)
+
+3. The hemisphere images were added as thumbnails with the following code: 
+<br /> ![image](https://user-images.githubusercontent.com/108038989/189007595-5994b815-bc71-4f44-b6a6-84642abaf246.png)
+
+## Summary
+Final web application look:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/189007288-dde45781-c37d-4c30-b9b9-732fff232bd9.png)
